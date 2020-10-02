@@ -14,19 +14,19 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10rem;
-  padding-top: 2.5rem;
+  padding-right: 10vw;
+  padding-top: 2.5vw;
 }
 
 ul {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 35vw;
 }
 
 li {
   list-style-type: none;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 300;
 }
 
@@ -37,10 +37,10 @@ a {
 
 .lead {
   color: white;
-  font-size: 4rem;
+  font-size: 4vw;
   font-weight: 700;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
   letter-spacing: -0.03em;
 }
 
@@ -57,7 +57,7 @@ hr {
 .sublead {
   color: white;
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 4vw;
   width: 65vw;
   margin: 2rem 0;
   line-height: 1.1em;
@@ -66,7 +66,7 @@ hr {
 
 .description {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 300;
   margin-top: 2rem;
   letter-spacing: -0.03em;
@@ -75,7 +75,7 @@ hr {
 
 .Hero1 {
   margin-top: 6rem;
-  padding-left: 12rem;
+  padding-left: 12vw;
   position: relative;
   display: block;
   height: 90vh;
@@ -89,8 +89,8 @@ hr {
 .srini {
   position: absolute;
   top: 0;
-  right: 10rem;
-  height: 31rem;
+  right: 13vw;
+  height: 35vw;
 }
 
 .Hero2,
