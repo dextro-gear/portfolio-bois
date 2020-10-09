@@ -14,7 +14,7 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10vw;
+  padding-right: 13vw;
   padding-top: 2.5vw;
 }
 
@@ -75,10 +75,10 @@ hr {
 
 .Hero1 {
   margin-top: 6rem;
-  padding-left: 12vw;
+  margin-left: 12vw;
   position: relative;
   display: block;
-  height: 90vh;
+  height: 80vh;
 }
 
 .Hero1Container {
@@ -97,35 +97,94 @@ hr {
 .Hero3,
 .Hero4 {
   position: relative;
-  height: 50vh;
-  padding-left: 12rem;
+  margin-left: 12vw;
+}
+
+.work-text-container {
+  display: inline;
+  position: absolute;
+  z-index: 10;
+}
+
+.work-title {
+  color: white;
+  font-size: 4vw;
+  display: block;
+  letter-spacing: -0.03em;
+  margin: 1rem 0;
+}
+
+.work-subtitle {
+  color: white;
+  display: block;
+  font-size: 2vw;
+  letter-spacing: -0.03em;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+
+.work-sub-subtitle {
+  color: white;
+  display: block;
+  font-size: 1.2vw;
+  letter-spacing: -0.03em;
+  opacity: 0.7;
+  font-weight: 300;
+  line-height: 1;
+  margin: 3rem 0;
+}
+
+.work-description {
+  color: white;
+  display: block;
+  font-size: 1.2vw;
+  width: 20vw;
+  letter-spacing: -0.03em;
+  font-weight: 300;
+  line-height: 1.1em;
+  margin-top: 5rem;
+}
+
+.work-layout {
+  position: relative;
+  margin-top: 7rem;
+}
+
+.work-image {
+  padding-left: 10vw;
+  opacity: 0.25;
 }
 
 .hero4flex {
   display: flex;
   justify-content: space-between;
-  margin-right: 10rem;
+  margin-right: 12vw;
 }
 
 .bottomUL {
   flex-direction: column;
+  width: 100%;
 }
 
 .bottomLI {
   text-decoration: underline;
   color: white;
   margin: 10px 0;
+  width: 10vw;
+  text-align: end;
 }
 
 footer {
   display: flex;
-  padding: 0 10rem;
+  padding: 0 12vw;
   justify-content: space-between;
-  align-items: center;
 }
 
 .footerLinksContainer {
-  width: 30%;
+  width: 10vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyrights {
