@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 12vw;
   background-color: #1d1d1d;
   position: relative;
 }
@@ -14,14 +14,13 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  padding-right: 13vw;
   padding-top: 2.5vw;
 }
 
 ul {
   display: flex;
   justify-content: space-between;
-  width: 35vw;
+  width: 30vw;
 }
 
 li {
@@ -74,14 +73,14 @@ hr {
 }
 
 .Hero1 {
-  margin-top: 6rem;
-  margin-left: 12vw;
+  margin-top: 4rem;
   position: relative;
   display: block;
-  height: 80vh;
+  height: 35vw;
+  margin-bottom: 6rem;
 }
 
-.Hero1Container {
+.Hero1TextContainer {
   position: absolute;
   z-index: 10;
 }
@@ -89,15 +88,22 @@ hr {
 .srini {
   position: absolute;
   top: 0;
-  right: 13vw;
+  right: 0;
   height: 35vw;
+}
+
+.srini-circle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -6vw;
+  margin-bottom: -6vw;
 }
 
 .Hero2,
 .Hero3,
 .Hero4 {
   position: relative;
-  margin-left: 12vw;
 }
 
 .work-text-container {
@@ -125,6 +131,7 @@ hr {
 }
 
 .work-sub-subtitle {
+  font-family: Inter;
   color: white;
   display: block;
   font-size: 1.2vw;
@@ -136,13 +143,14 @@ hr {
 }
 
 .work-description {
+  font-family: Inter;
   color: white;
   display: block;
   font-size: 1.2vw;
   width: 20vw;
   letter-spacing: -0.03em;
   font-weight: 300;
-  line-height: 1.1em;
+  line-height: 1.5em;
   margin-top: 5rem;
 }
 
@@ -154,12 +162,45 @@ hr {
 .work-image {
   padding-left: 10vw;
   opacity: 0.25;
+  width: 65vw;
+}
+
+.podcast-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.podcast-description {
+  font-family: Inter;
+  font-size: 1.2vw;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.5em;
+  text-align: left;
+  color: white;
+  width: 42vw;
+  padding-right: 6.5vw;
+}
+
+.podcast-platform-title {
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 300;
+  margin-top: 4.5rem;
+}
+
+.podcast-platform-image {
+  width: 90%;
+}
+
+.podcast-image {
+  display: inline;
+  width: 25vw;
 }
 
 .hero4flex {
   display: flex;
   justify-content: space-between;
-  margin-right: 12vw;
 }
 
 .bottomUL {
@@ -177,7 +218,6 @@ hr {
 
 footer {
   display: flex;
-  padding: 0 12vw;
   justify-content: space-between;
 }
 
