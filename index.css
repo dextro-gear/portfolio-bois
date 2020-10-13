@@ -13,7 +13,7 @@ body {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-top: 1.8vw;
 }
 
@@ -25,13 +25,18 @@ ul {
 
 li {
   list-style-type: none;
-  font-size: 1.2vw;
-  font-weight: 300;
 }
 
 a {
   color: white;
   text-decoration: none;
+  font-size: 1.2vw;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+
+.website-name {
+  padding: 0;
 }
 
 .lead {
@@ -279,4 +284,75 @@ footer {
 .copyrights {
   font-size: 1.2vw;
   color: white;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
+
+/* About page styles */
+
+.about-image {
+  float: right;
+  margin-top: 3rem;
+}
+
+.sublead-small {
+  color: white;
+  font-weight: 300;
+  font-size: 2.6vw;
+  width: 50vw;
+  margin: 3rem 0;
+  line-height: 1.1em;
+  letter-spacing: -0.03em;
+}
+.about-intro-container {
+  margin-top: 7rem;
+}
+
+.about-description {
+  color: white;
+  margin: 2rem 0;
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 1.2vw;
+  letter-spacing: -0.03em;
+}
+
+.about-description-container {
+  width: 46vw;
+}
+
+.clientele-container {
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+}
+.clientele-inner-container {
+  width: 40%;
+  margin-right: 4rem;
+}
+
+.clientele-ul {
+  display: block;
+  padding: 0;
+}
+.clientele-title {
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+
+.clientele-li {
+  color: white;
+  font-family: Inter;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  font-size: 1.2vw;
+}
+
+.bottom-line {
+  margin-top: 7rem;
 }
