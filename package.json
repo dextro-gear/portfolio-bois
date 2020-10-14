@@ -8,12 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dextro-gear/dextro-gear.github.io.git"
+    "url": "git+https://github.com/dextro-gear/srinis-portfolio.git"
   },
   "author": "Abhishek Rajasundaram",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dextro-gear/dextro-gear.github.io/issues"
+    "url": "https://github.com/dextro-gear/srinis-portfolio.git"
   },
-  "homepage": "https://github.com/dextro-gear/dextro-gear.github.io#readme"
+  "homepage": "https://github.com/dextro-gear/srinis-portfolio.git",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
 }
