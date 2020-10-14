@@ -1,17 +1,8 @@
-var layoutContainer = document.querySelectorAll(".work-layout");
-var workImage = document.querySelectorAll(".work-image");
-var workTextContainer = document.querySelectorAll(".work-text-container");
+import "./node_modules/jquery/dist/jquery.js";
 
+var win = $(window);
+var circleThingy = $(".srini-circle");
 
-// Work thumbnail Background to Foreground animation
-
-layoutContainer.forEach(container => {
-    container.addEventListener('mouseover', () => {
-        console.log("Mouse is hovering over.");
-    });
-    
-    container.addEventListener('mouseout', () => {
-        console.log("Mouse is no longer hovering over.");
-    });    
-});
-
+win.on("scroll", ()=>{
+    circleThingy.css("transform","rotate(" + (win.scrollTop() * 0.2) +"deg)" );
+})
