@@ -9,6 +9,7 @@ body {
   padding: 0 12vw;
   background-color: #1d1d1d;
   position: relative;
+  overflow-x: hidden;
 }
 
 nav {
@@ -282,6 +283,7 @@ hr {
 
 .podcast-preview {
   width: 50vw;
+  height: 16vw;
 }
 
 .hero4flex {
@@ -383,4 +385,22 @@ footer {
 
 .bottom-line {
   margin-top: 7rem;
+}
+
+/* responsiveness */
+
+@media screen and (width: 1536px) {
+  .srini-circle {
+    width: 13vw;
+    margin-right: -6.4vw;
+    margin-bottom: -6.4vw;
+  }
+
+  .podcast-image {
+    width: 22vw;
+  }
+
+  .about-image {
+    width: 22vw;
+  }
 }
