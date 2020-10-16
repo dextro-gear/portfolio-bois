@@ -172,6 +172,8 @@ hr {
 
 .work-text-container {
   display: inline;
+  position: relative;
+  z-index: 2;
 }
 
 .work-title {
@@ -286,8 +288,8 @@ hr {
 }
 
 .podcast-preview {
-  width: 50vw;
-  height: 16vw;
+  width: 35vw;
+  height: 15vw;
 }
 
 .hero4flex {
