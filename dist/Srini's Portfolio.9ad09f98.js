@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./travis.png":[["travis.1fa2c970.png","travis.png"],"travis.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts\\NeueMachina-Regular.otf":[["NeueMachina-Regular.04374164.otf","fonts/NeueMachina-Regular.otf"],"fonts/NeueMachina-Regular.otf"],"./fonts\\NeueMachina-Light.otf":[["NeueMachina-Light.cc393cd7.otf","fonts/NeueMachina-Light.otf"],"fonts/NeueMachina-Light.otf"],"./fonts\\NeueMachina-Ultrabold.otf":[["NeueMachina-Ultrabold.c389b8f8.otf","fonts/NeueMachina-Ultrabold.otf"],"fonts/NeueMachina-Ultrabold.otf"],"./travis.png":[["travis.1fa2c970.png","travis.png"],"travis.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
