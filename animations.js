@@ -1,6 +1,4 @@
-// import Scrollbar from "smooth-scrollbar";
-
-const { contains } = require("jquery");
+// import LocomotiveScroll from "locomotive-scroll";
 
 window.addEventListener("scroll", ()=>{
     var scroll = window.scrollY;
@@ -23,7 +21,26 @@ textLayout.forEach((container)=> {
     }, false);
 });
 
+// travis hover animation
+var travisLink = document.querySelector(".travis-link");
+var body = document.querySelector("body");
 
-// Scrollbar.init(document.querySelector("html"), {
-//     "damping": 0.5,
+travisLink.addEventListener("mouseover", e=>{
+    var travisImage = document.querySelector(".travis");
+    travisImage.setAttribute("style", "top:" + e.pageY + "px; left:" + e.pageX + "px; transform: translate(-50%, -50%);");
+    travisImage.style.display = "initial";
+    console.log("mouseover");
+}, false);
+
+travisLink.addEventListener("mouseleave", e=>{
+    var travisImage = document.querySelector(".travis");
+    travisImage.style.display = "none";
+    console.log("mouseleave");
+}, false);
+
+
+// Locomotive scroll
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector("[data-scroll-container]"),
+//     smooth: true
 // });

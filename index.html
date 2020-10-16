@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <link rel="stylesheet" href="./index.css" />
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Srinivas Teja K — Product Designer</title>
   </head>
-  <body id="full-page">
+  <body id="full-page" data-scroll-container>
       <!-- Top Nav component -->
     <header>
       <nav>
@@ -22,6 +22,7 @@
       </nav>
     </header>
 
+    <div class="travis"></div>
     <!-- First Hero Section -->
     <div class="Hero1">
       <div class="Hero1TextContainer">
@@ -32,7 +33,7 @@
         <p class="description">
           I post artworks on my <a href="https://www.instagram.com/srinivasteja.k/" target="_blank" class="desc-links">Instagram</a> and I only listen to one
           <a href="https://open.spotify.com/playlist/3o1mlZuNgr6mCIKJmXZR3X?si=EfldbojRT_ygUmAN9xxKMQ" target="_blank" class="desc-links">playlist</a>.<br />
-          I also host a podcast called <a href="https://open.spotify.com/show/1y1jh73dtEwCgxcC1fhPeY?si=5wgJ_egCSs2hYb1EwWmVcQ" target="_blank" class="desc-links">Talk Design To Me</a> and have a cat named <a href="#" class="travis-cutie">Travis</a>.
+          I also host a podcast called <a href="https://open.spotify.com/show/1y1jh73dtEwCgxcC1fhPeY?si=5wgJ_egCSs2hYb1EwWmVcQ" target="_blank" class="desc-links">Talk Design To Me</a> and have a cat named <span class="travis-link">Travis</span>.
         </p>
         <p class="description">
           Hit me up if you’d like to work/ collaborate on artworks/ talk to me
@@ -92,10 +93,10 @@
                 <img src="./Mask Group.png" alt="..." class="podcast-platform-image">
           </div>
         </div>
-        <center>
-            <p class="podcast-preview-title">LISTEN TO THE LATEST EPISODE HERE</p>
-            <iframe class="podcast-preview" src="https://open.spotify.com/embed-podcast/episode/3wHvp9PnIPmG6MCtV2ESTY" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </center>
+        <div class="center">
+          <p class="podcast-preview-title">LISTEN TO THE LATEST EPISODE HERE</p>
+          <iframe class="podcast-preview" src="https://open.spotify.com/embed-podcast/episode/3wHvp9PnIPmG6MCtV2ESTY" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
     </section>
 
     <!-- Fourth Hero Section -->
@@ -116,11 +117,9 @@
     </section>
 
     <!-- footer section -->
-    <footer>
-      <center>
-        <p class="copyrights">&#169; Srinivas Teja K 2020</p>
-      </center>
-    </footer>
+    <div class="footer">
+      <p class="copyrights">&#169; Srinivas Teja K 2020</p>
+    </div>
 
     <!-- JavaScripts -->
     <script type="module" src="./node_modules/jquery/dist/jquery.min.js"></script>
