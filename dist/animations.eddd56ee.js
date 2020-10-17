@@ -157,6 +157,14 @@ window.addEventListener("mousemove", function (event) {
   cursor.style.left = event.pageX + "px";
 }, false);
 /* CUSTOM CURSOR */
+
+/* VIEW CURSOR */
+// var workImages = document.querySelectorAll(".work-image");
+// workImages.forEach(image => {
+//     image
+// })
+
+/* VIEW CURSOR */
 // Locomotive scroll
 // const scroll = new LocomotiveScroll({
 //     el: document.querySelector("[data-scroll-container]"),

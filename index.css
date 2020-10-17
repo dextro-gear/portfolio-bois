@@ -22,7 +22,8 @@ html {
   min-height: 100%;
   box-sizing: border-box;
   font-family: "NM";
-  cursor: none;
+  overflow-x: hidden;
+  /* cursor: none; */
 }
 
 body {
@@ -34,7 +35,7 @@ body {
   background-color: #1d1d1d;
 }
 
-.cursor {
+/* .cursor {
   position: absolute;
   width: 1vw;
   height: 1vw;
@@ -42,13 +43,26 @@ body {
   background-color: white;
   transform: translate(-50%, -50%);
   opacity: 0.6;
-  z-index: 20;
+  z-index: 30;
   pointer-events: none;
-  transition: 80ms ease;
-}
+  transition: 50ms ease;
+} */
+
+/* .view-cursor {
+  position: absolute;
+  background-image: url("./custom-pointer.png");
+  background-size: cover;
+  width: 5vw;
+  height: 5vw;
+} */
 
 ::-webkit-scrollbar {
   width: 5px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 5px;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar-track {
