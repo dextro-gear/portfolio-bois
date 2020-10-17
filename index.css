@@ -43,6 +43,7 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0.6;
   z-index: 20;
+  pointer-events: none;
 }
 
 ::-webkit-scrollbar {
