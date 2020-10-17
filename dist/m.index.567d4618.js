@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"index.css":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"mobile/m.index.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts\\NeueMachina-Regular.otf":[["NeueMachina-Regular.04374164.otf","fonts/NeueMachina-Regular.otf"],"fonts/NeueMachina-Regular.otf"],"./fonts\\NeueMachina-Light.otf":[["NeueMachina-Light.cc393cd7.otf","fonts/NeueMachina-Light.otf"],"fonts/NeueMachina-Light.otf"],"./fonts\\NeueMachina-Ultrabold.otf":[["NeueMachina-Ultrabold.c389b8f8.otf","fonts/NeueMachina-Ultrabold.otf"],"fonts/NeueMachina-Ultrabold.otf"],"./travis.png":[["travis.1fa2c970.png","travis.png"],"travis.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\NeueMachina-Regular.otf":[["NeueMachina-Regular.04374164.otf","fonts/NeueMachina-Regular.otf"],"fonts/NeueMachina-Regular.otf"],"./..\\fonts\\NeueMachina-Light.otf":[["NeueMachina-Light.cc393cd7.otf","fonts/NeueMachina-Light.otf"],"fonts/NeueMachina-Light.otf"],"./..\\fonts\\NeueMachina-Ultrabold.otf":[["NeueMachina-Ultrabold.c389b8f8.otf","fonts/NeueMachina-Ultrabold.otf"],"fonts/NeueMachina-Ultrabold.otf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55246" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51495" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -394,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/Srini%27s%20Portfolio.9ad09f98.js.map
+//# sourceMappingURL=/m.index.567d4618.js.map

@@ -127,10 +127,11 @@ window.addEventListener("scroll", function () {
 var textLayout = document.querySelectorAll(".work-layout");
 textLayout.forEach(function (container) {
   var workText = container.querySelector(".work-text-container");
-  container.addEventListener("mouseover", function () {
+  var workImage = container.querySelector(".work-image");
+  workImage.addEventListener("mouseover", function () {
     workText.style.opacity = 0.4;
   }, false);
-  container.addEventListener("mouseleave", function () {
+  workImage.addEventListener("mouseleave", function () {
     workText.style.opacity = 1;
   }, false);
 }); // travis hover animation
@@ -147,7 +148,16 @@ travisLink.addEventListener("mouseleave", function (e) {
   var travisImage = document.querySelector(".travis");
   travisImage.style.display = "none";
   console.log("mouseleave");
-}, false); // Locomotive scroll
+}, false);
+/* CUSTOM CURSOR */
+
+window.addEventListener("mousemove", function (event) {
+  var cursor = document.querySelector(".cursor");
+  cursor.style.top = event.pageY + "px";
+  cursor.style.left = event.pageX + "px";
+}, false);
+/* CUSTOM CURSOR */
+// Locomotive scroll
 // const scroll = new LocomotiveScroll({
 //     el: document.querySelector("[data-scroll-container]"),
 //     smooth: true
@@ -180,7 +190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60011" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55246" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "NM";
+  src: url("/NeueMachina-Regular.04374164.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NM";
+  src: url("/NeueMachina-Light.cc393cd7.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "NM";
+  src: url("/NeueMachina-Ultrabold.c389b8f8.otf");
+  font-weight: 700;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+  font-family: "NM";
+}
+
+body {
+  margin: 0;
+  padding: 0 12vw;
+  min-height: 100%;
+  height: 300vh;
+  box-sizing: border-box;
+  background-color: #1d1d1d;
+}
+
+
+/*# sourceMappingURL=/m.index.567d4618.css.map */

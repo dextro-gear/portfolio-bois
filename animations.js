@@ -11,12 +11,13 @@ var textLayout = document.querySelectorAll(".work-layout");
 
 textLayout.forEach((container)=> {
     var workText = container.querySelector(".work-text-container");
+    var workImage = container.querySelector(".work-image");
 
-    container.addEventListener("mouseover", ()=>{
+    workImage.addEventListener("mouseover", ()=>{
         workText.style.opacity = 0.4;
     }, false);
 
-    container.addEventListener("mouseleave", ()=>{
+    workImage.addEventListener("mouseleave", ()=>{
         workText.style.opacity = 1;
     }, false);
 });
@@ -38,6 +39,16 @@ travisLink.addEventListener("mouseleave", e=>{
     console.log("mouseleave");
 }, false);
 
+
+/* CUSTOM CURSOR */
+
+window.addEventListener("mousemove", event=>{
+    var cursor = document.querySelector(".cursor");
+    cursor.style.top = event.pageY + "px";
+    cursor.style.left = event.pageX + "px";
+}, false);
+
+/* CUSTOM CURSOR */
 
 // Locomotive scroll
 // const scroll = new LocomotiveScroll({
