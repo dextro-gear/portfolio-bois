@@ -119,11 +119,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"animations.js":[function(require,module,exports) {
 // import LocomotiveScroll from "locomotive-scroll";
+
+/* CIRCLE THINGY SCROLL ROTATE ANIMATION */
 window.addEventListener("scroll", function () {
   var scroll = window.scrollY;
   var circleThingy = document.querySelector(".srini-circle");
   circleThingy.style.transform = "rotate(" + scroll * 0.2 + "deg)";
 });
+/* CIRCLE THINGY SCROLL ROTATE ANIMATION */
+
+/* WORK THUMBNAIL OPACITY ANIMATION */
+
 var textLayout = document.querySelectorAll(".work-layout");
 textLayout.forEach(function (container) {
   var workText = container.querySelector(".work-text-container");
@@ -134,7 +140,10 @@ textLayout.forEach(function (container) {
   workImage.addEventListener("mouseleave", function () {
     workText.style.opacity = 1;
   }, false);
-}); // travis hover animation
+});
+/* WORK THUMBNAIL OPACITY ANIMATION */
+
+/* TRAVIS HOVER ANIMATION */
 
 var travisLink = document.querySelector(".travis-link");
 var body = document.querySelector("body");
@@ -149,6 +158,8 @@ travisLink.addEventListener("mouseleave", function (e) {
   travisImage.style.display = "none";
   console.log("mouseleave");
 }, false);
+/* TRAVIS HOVER ANIMATION */
+
 /* CUSTOM CURSOR */
 
 window.addEventListener("mousemove", function (event) {
@@ -159,10 +170,6 @@ window.addEventListener("mousemove", function (event) {
 /* CUSTOM CURSOR */
 
 /* VIEW CURSOR */
-// var workImages = document.querySelectorAll(".work-image");
-// workImages.forEach(image => {
-//     image
-// })
 
 /* VIEW CURSOR */
 // Locomotive scroll
@@ -198,7 +205,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57216" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51288" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

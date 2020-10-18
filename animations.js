@@ -1,12 +1,17 @@
 // import LocomotiveScroll from "locomotive-scroll";
 
+/* CIRCLE THINGY SCROLL ROTATE ANIMATION */
 window.addEventListener("scroll", ()=>{
     var scroll = window.scrollY;
     var circleThingy = document.querySelector(".srini-circle");
 
     circleThingy.style.transform = "rotate(" + (scroll*0.2) + "deg)";
 })
+/* CIRCLE THINGY SCROLL ROTATE ANIMATION */
 
+
+
+/* WORK THUMBNAIL OPACITY ANIMATION */
 var textLayout = document.querySelectorAll(".work-layout");
 
 textLayout.forEach((container)=> {
@@ -21,8 +26,11 @@ textLayout.forEach((container)=> {
         workText.style.opacity = 1;
     }, false);
 });
+/* WORK THUMBNAIL OPACITY ANIMATION */
 
-// travis hover animation
+
+
+/* TRAVIS HOVER ANIMATION */
 var travisLink = document.querySelector(".travis-link");
 var body = document.querySelector("body");
 
@@ -38,25 +46,21 @@ travisLink.addEventListener("mouseleave", e=>{
     travisImage.style.display = "none";
     console.log("mouseleave");
 }, false);
+/* TRAVIS HOVER ANIMATION */
+
 
 
 /* CUSTOM CURSOR */
-
 window.addEventListener("mousemove", event=>{
     var cursor = document.querySelector(".cursor");
     cursor.style.top = event.pageY + "px";
     cursor.style.left = event.pageX + "px";
 }, false);
-
 /* CUSTOM CURSOR */
 
+
+
 /* VIEW CURSOR */
-
-// var workImages = document.querySelectorAll(".work-image");
-
-// workImages.forEach(image => {
-//     image
-// })
 
 /* VIEW CURSOR */
 

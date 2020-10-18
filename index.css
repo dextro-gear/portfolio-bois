@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 @font-face {
   font-family: "NM";
   src: url("./fonts/NeueMachina-Regular.otf");
@@ -223,7 +225,7 @@ hr {
 .travis {
   display: none;
   position: absolute;
-  background-image: url("./travis.png");
+  background-image: url("./public/travis.png");
   background-size: cover;
   width: 14vw;
   height: 14vw;
