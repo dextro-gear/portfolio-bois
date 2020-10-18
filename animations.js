@@ -1,4 +1,5 @@
 // import LocomotiveScroll from "locomotive-scroll";
+import $ from "jquery";
 
 /* CIRCLE THINGY SCROLL ROTATE ANIMATION */
 window.addEventListener("scroll", ()=>{
@@ -51,17 +52,30 @@ travisLink.addEventListener("mouseleave", e=>{
 
 
 /* CUSTOM CURSOR */
-window.addEventListener("mousemove", event=>{
-    var cursor = document.querySelector(".cursor");
-    cursor.style.top = event.pageY + "px";
-    cursor.style.left = event.pageX + "px";
-}, false);
+// window.addEventListener("mousemove", event=>{
+//     var cursor = document.querySelector(".cursor");
+//     cursor.style.top = event.pageY + "px";
+//     cursor.style.left = event.pageX + "px";
+// }, false);
 /* CUSTOM CURSOR */
 
 
 
 /* VIEW CURSOR */
+var viewCursor = $(".view-cursor");
+var workImage = $(".work-image");
 
+$(document).on("mousemove", (event)=>{
+    viewCursor.css("top", event.pageY + "px");
+    viewCursor.css("left", event.pageX + "px");
+})
+workImage.on("mouseenter", ()=>{
+    viewCursor.css("transform", "scale(1)");
+});
+
+workImage.on("mouseleave", ()=>{
+    viewCursor.css("transform", "scale(0)");
+});
 /* VIEW CURSOR */
 
 

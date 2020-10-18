@@ -50,13 +50,26 @@ body {
   transition: 50ms ease;
 } */
 
-/* .view-cursor {
+.view-cursor {
   position: absolute;
-  background-image: url("./custom-pointer.png");
+  background-image: url("./public/custom-pointer.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 5vw;
   height: 5vw;
-} */
+  z-index: 35;
+  transform: scale(0) translate(-50%, -50%);
+  transition: 200ms cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
+  opacity: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.active {
+  transform: scale(1);
+  opacity: 1;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -325,6 +338,7 @@ hr {
 .work-image:hover {
   z-index: 20;
   opacity: 1;
+  cursor: none;
 }
 
 .Hero3 {
