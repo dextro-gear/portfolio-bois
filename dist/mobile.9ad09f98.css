@@ -32,7 +32,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0 8vw;
   min-height: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -62,12 +61,13 @@ body {
   font-size: 4.3vw;
   font-weight: 300;
   margin: 0;
-  padding: 0;
+  padding: 0 8vw;
 }
 
 .sub-bigboi {
   color: white;
   margin: 0;
+  padding: 0 8vw;
   font-family: Inter;
   font-size: 3vw;
   font-weight: 300;
@@ -96,15 +96,25 @@ body {
   margin-top: 7vw;
 }
 
+.srini-image-container {
+  padding: 0 8vw;
+}
+
 hr {
   display: block;
   color: white;
   width: 7vw;
   height: 1px;
-  margin: 0;
   border: 0;
   border-top: 3px solid white;
   margin: 3vw 0;
+}
+
+.lead-container,
+.sublead-container,
+.desc-container,
+.hr-container {
+  padding: 0 8vw;
 }
 
 .sublead {
@@ -133,6 +143,7 @@ a {
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid white;
+  margin: 0 8vw;
 }
 
 .title-block .side-text {
@@ -147,14 +158,14 @@ a {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  transform-box: fill-box;
-  transform: scale(1.1);
+  padding: 0 3vw;
 }
 
 .card-image {
   width: 100%;
   vertical-align: top;
   margin: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .card-image-container {
@@ -164,7 +175,7 @@ a {
 .card-text {
   background-color: white;
   margin: 0;
-  padding: 4vw 6vw 3vw 6vw;
+  padding: 4vw 6vw;
   border-radius: 0 0 5px 5px;
 }
 
@@ -209,7 +220,7 @@ a {
 }
 
 .case-study-container {
-  padding-top: 5vw;
+  padding: 0 8vw;
 }
 .link-arrow {
   float: right;
