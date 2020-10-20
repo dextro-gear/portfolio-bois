@@ -11262,19 +11262,19 @@ travisLink.addEventListener("mouseleave", function (e) {
 /* CUSTOM CURSOR */
 
 /* VIEW CURSOR */
+// var viewCursor = $(".view-cursor");
+// var workImage = $(".work-image");
+// $(document).on("mousemove", (event)=>{
+//     viewCursor.css("top", event.pageY + "px");
+//     viewCursor.css("left", event.pageX + "px");
+// })
+// workImage.on("mouseenter", ()=>{
+//     viewCursor.css("transform", "scale(1)");
+// });
+// workImage.on("mouseleave", ()=>{
+//     viewCursor.css("transform", "scale(0)");
+// });
 
-var viewCursor = (0, _jquery.default)(".view-cursor");
-var workImage = (0, _jquery.default)(".work-image");
-(0, _jquery.default)(document).on("mousemove", function (event) {
-  viewCursor.css("top", event.pageY + "px");
-  viewCursor.css("left", event.pageX + "px");
-});
-workImage.on("mouseenter", function () {
-  viewCursor.css("transform", "scale(1)");
-});
-workImage.on("mouseleave", function () {
-  viewCursor.css("transform", "scale(0)");
-});
 /* VIEW CURSOR */
 // Locomotive scroll
 // const scroll = new LocomotiveScroll({
@@ -11309,7 +11309,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51288" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51393" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,5 +1,10 @@
 <svg width="98" height="99" viewBox="0 0 98 99" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="0.914062" y="0.285156" width="96.93" height="98.112" fill="url(#pattern0)"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="98" height="99">
+<rect x="0.632812" width="96.93" height="98.112" fill="url(#pattern0)"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="-3" y="-10" width="125" height="120" fill="white"/>
+</g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(-0.00609757) scale(0.00337398)"/>

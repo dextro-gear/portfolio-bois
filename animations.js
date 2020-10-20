@@ -62,20 +62,20 @@ travisLink.addEventListener("mouseleave", e=>{
 
 
 /* VIEW CURSOR */
-var viewCursor = $(".view-cursor");
-var workImage = $(".work-image");
+// var viewCursor = $(".view-cursor");
+// var workImage = $(".work-image");
 
-$(document).on("mousemove", (event)=>{
-    viewCursor.css("top", event.pageY + "px");
-    viewCursor.css("left", event.pageX + "px");
-})
-workImage.on("mouseenter", ()=>{
-    viewCursor.css("transform", "scale(1)");
-});
+// $(document).on("mousemove", (event)=>{
+//     viewCursor.css("top", event.pageY + "px");
+//     viewCursor.css("left", event.pageX + "px");
+// })
+// workImage.on("mouseenter", ()=>{
+//     viewCursor.css("transform", "scale(1)");
+// });
 
-workImage.on("mouseleave", ()=>{
-    viewCursor.css("transform", "scale(0)");
-});
+// workImage.on("mouseleave", ()=>{
+//     viewCursor.css("transform", "scale(0)");
+// });
 /* VIEW CURSOR */
 
 
