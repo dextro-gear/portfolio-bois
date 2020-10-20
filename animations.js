@@ -1,5 +1,5 @@
 // import LocomotiveScroll from "locomotive-scroll";
-import $ from "jquery";
+// import $ from "jquery";
 
 /* CIRCLE THINGY SCROLL ROTATE ANIMATION */
 window.addEventListener("scroll", ()=>{
