@@ -32,7 +32,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0 11vw;
+  padding: 0 8vw;
   min-height: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -148,7 +148,7 @@ a {
   position: relative;
   z-index: 1;
   transform-box: fill-box;
-  transform: scale(1.14);
+  transform: scale(1.1);
 }
 
 .card-image {
@@ -164,7 +164,7 @@ a {
 .card-text {
   background-color: white;
   margin: 0;
-  padding: 3vw 6vw;
+  padding: 4vw 6vw 3vw 6vw;
   border-radius: 0 0 5px 5px;
 }
 
@@ -187,7 +187,7 @@ a {
 .card-text-description {
   font-family: "Inter";
   font-weight: 450;
-  font-size: 3vw;
+  font-size: 3.2vw;
   line-height: 1.3em;
   margin: 3vw 3vw 3vw 0;
   letter-spacing: -0.04em;
