@@ -321,7 +321,6 @@ hr {
 }
 
 .casestudy-link {
-  opacity: 0.75;
   width: 100%;
   margin-top: 5vw;
   margin-bottom: 5vw;
@@ -335,6 +334,7 @@ hr {
   font-size: 1.2vw;
   font-family: Inter;
   letter-spacing: -0.03em;
+  opacity: 0.75;
 }
 
 .work-layout {
@@ -580,8 +580,11 @@ hr {
   }
 
   .casestudy-link {
+    margin-top: 4.8vw;
+  }
+  .casestudy-link .span,
+  .casestudy-link .link {
     opacity: 0.75;
-    margin-top: 4.5vw;
   }
 }
 
