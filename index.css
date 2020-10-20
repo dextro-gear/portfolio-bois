@@ -321,6 +321,7 @@ hr {
 }
 
 .casestudy-link {
+  opacity: 0.75;
   width: 100%;
   margin-top: 5vw;
   margin-bottom: 5vw;
@@ -572,6 +573,15 @@ hr {
   .Hero3 {
     margin-top: 4vw;
     margin-bottom: 3vw;
+  }
+
+  .arrow {
+    margin-left: 0.5rem;
+  }
+
+  .casestudy-link {
+    opacity: 0.75;
+    margin-top: 4.5vw;
   }
 }
 
