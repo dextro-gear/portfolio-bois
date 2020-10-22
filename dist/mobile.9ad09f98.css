@@ -55,6 +55,10 @@ body {
   display: inline;
 }
 
+.srinivas-teja > a {
+  text-decoration: none;
+}
+
 .bigboi {
   color: white;
   font-size: 4.3vw;
@@ -207,6 +211,7 @@ a {
 }
 
 .card-text-description {
+  color: #1d1d1d;
   font-family: "Inter";
   font-weight: 450;
   font-size: 3.5vw;
@@ -440,7 +445,7 @@ podcast-link {
   color: white;
   font-size: 15vw;
   font-family: "Inter";
-  font-weight: 150;
+  font-weight: 250;
   position: absolute;
   transform: rotate(45deg);
   right: 7vw;
@@ -464,6 +469,8 @@ nav.links {
   font-family: "NM";
   font-weight: 700;
   text-decoration: none;
+  line-height: 1;
+  margin: 4vw 0;
 }
 
 nav > p {
@@ -474,6 +481,7 @@ nav > p {
 p.mail {
   font-weight: 300;
   font-size: 5vw;
+  margin: 2vw 0;
 }
 
 /* FOOOOOOOTER */
