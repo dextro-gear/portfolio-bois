@@ -45,6 +45,6 @@ closeButton.addEventListener("click", ()=>{
 var circleThingy = document.querySelector(".circle-thingy");
 
 window.addEventListener("scroll", ()=>{
-    circleThingy.style.transform = " rotate(" + (window.scrollY * 0.3) + "deg)";
+    circleThingy.style.transform = " rotate(-" + (window.scrollY * 0.3) + "deg)";
 }, false);
 // circle rotate animation

@@ -1925,7 +1925,7 @@ closeButton.addEventListener("click", function () {
 
 var circleThingy = document.querySelector(".circle-thingy");
 window.addEventListener("scroll", function () {
-  circleThingy.style.transform = " rotate(" + window.scrollY * 0.3 + "deg)";
+  circleThingy.style.transform = " rotate(-" + window.scrollY * 0.3 + "deg)";
 }, false); // circle rotate animation
 },{"animejs":"../node_modules/animejs/lib/anime.es.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
