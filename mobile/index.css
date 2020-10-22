@@ -426,7 +426,7 @@ podcast-link {
 
 /* NAV OVERLAY */
 .overlay-body {
-  position: absolute;
+  position: fixed;
   /* transform: translateY(-100%); */
   z-index: 60;
   top: 0;
