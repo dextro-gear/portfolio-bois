@@ -1891,7 +1891,8 @@ var _animejs = _interopRequireDefault(require("animejs"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var page = document.querySelector("html");
+var page = document.querySelector("html"); // NAV OVERLAY ANIMATION
+
 var overlay = document.querySelector(".overlay-body");
 console.log(overlay);
 var slideUpAnimation = (0, _animejs.default)({
@@ -1919,7 +1920,13 @@ closeButton.addEventListener("click", function () {
   slideUpAnimation.play();
   page.style.overflowY = "auto";
   console.log("Close");
-}, false);
+}, false); // NAV OVERLAY ANIMATION
+// circle rotate animation
+
+var circleThingy = document.querySelector(".circle-thingy");
+window.addEventListener("scroll", function () {
+  circleThingy.style.transform = " rotate(" + window.scrollY * 0.3 + "deg)";
+}, false); // circle rotate animation
 },{"animejs":"../node_modules/animejs/lib/anime.es.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

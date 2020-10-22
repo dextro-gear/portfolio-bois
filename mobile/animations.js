@@ -2,6 +2,7 @@ import anime from "animejs";
 
 var page = document.querySelector("html");
 
+// NAV OVERLAY ANIMATION
 var overlay = document.querySelector(".overlay-body");
 console.log(overlay);
 
@@ -37,3 +38,13 @@ closeButton.addEventListener("click", ()=>{
     console.log("Close");
 
 }, false);
+// NAV OVERLAY ANIMATION
+
+
+// circle rotate animation
+var circleThingy = document.querySelector(".circle-thingy");
+
+window.addEventListener("scroll", ()=>{
+    circleThingy.style.transform = " rotate(" + (window.scrollY * 0.3) + "deg)";
+}, false);
+// circle rotate animation

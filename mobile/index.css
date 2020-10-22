@@ -100,7 +100,16 @@ body {
 }
 
 .srini-image-container {
+  position: relative;
   padding: 0 8vw;
+}
+
+.circle-thingy {
+  position: absolute;
+  width: 56vw;
+  left: 0;
+  top: 25%;
+  margin-left: -20%;
 }
 
 hr {
