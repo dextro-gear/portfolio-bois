@@ -74,6 +74,7 @@ body {
 .hamburger {
   color: white;
   font-size: 7vw;
+  cursor: pointer;
 }
 
 .Hero-1 {
@@ -91,6 +92,7 @@ body {
 .hero1-srini {
   width: 100%;
   margin-top: 5vw;
+  border-radius: 5px;
 }
 
 .srini-image-container {
@@ -295,9 +297,9 @@ a {
   margin-top: 4vw;
 }
 
-.podcast-platforms-container .underlined-title {
-  /* text-decoration: underline; */
-}
+/* .podcast-platforms-container .underlined-title {
+  text-decoration: underline;
+} */
 
 .podcast-icon {
   justify-self: center;
@@ -389,6 +391,7 @@ podcast-link {
 }
 
 .clientele .embed-title {
+  font-size: 4vw;
   margin-top: 10vw;
   text-align: left;
   padding: 0 8vw;
@@ -405,14 +408,14 @@ podcast-link {
   color: white;
   font-family: "Inter";
   font-weight: 300;
-  font-size: 3.5vw;
+  font-size: 4vw;
   list-style-type: none;
   padding: 0;
   margin: 0 10vw 0 0;
 }
 
 .clientele-container > ul > li {
-  margin-bottom: 1vw;
+  margin-bottom: 1.7vw;
 }
 
 .about-footer {
@@ -420,3 +423,89 @@ podcast-link {
 }
 /* ABOUT */
 /* About page */
+
+/* NAV OVERLAY */
+.overlay-body {
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: 60;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1d1d1d;
+}
+
+.close-button {
+  color: white;
+  font-size: 15vw;
+  font-family: "Inter";
+  font-weight: 150;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 7vw;
+  top: 3vw;
+}
+
+nav.links {
+  display: block;
+  text-align: center;
+  color: white;
+  font-family: "NM";
+  font-weight: 700;
+  font-size: 13vw;
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+
+.a-link {
+  display: block;
+  color: white;
+  font-family: "NM";
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav > p {
+  margin: 0;
+  padding: 0;
+}
+
+p.mail {
+  font-weight: 300;
+  font-size: 5vw;
+}
+
+/* FOOOOOOOTER */
+.overlay-footer-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.overlay-footer-flex {
+  box-sizing: border-box;
+  margin: 10vw 0;
+  padding: 0 20vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.overlay-footer-flex > a {
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: 3.5vw;
+}
+
+.overlay-copyrights {
+  margin-bottom: 10vw;
+}
+
+.overlay-copyrights > p {
+  font-family: "NM";
+  color: white;
+  text-align: center;
+  font-size: 3.5vw;
+}
+/* FOOOOOOOTER */
+/* NAV OVERLAY */

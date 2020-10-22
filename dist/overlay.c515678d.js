@@ -184,7 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"overlay.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\fonts\\NeueMachina-Regular.otf":[["NeueMachina-Regular.076fb193.otf","fonts/NeueMachina-Regular.otf"],"fonts/NeueMachina-Regular.otf"],"./..\\fonts\\NeueMachina-Light.otf":[["NeueMachina-Light.133bb415.otf","fonts/NeueMachina-Light.otf"],"fonts/NeueMachina-Light.otf"],"./..\\fonts\\NeueMachina-Ultrabold.otf":[["NeueMachina-Ultrabold.3c6b2b48.otf","fonts/NeueMachina-Ultrabold.otf"],"fonts/NeueMachina-Ultrabold.otf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -389,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/about.js.map
+//# sourceMappingURL=/overlay.c515678d.js.map
