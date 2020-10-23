@@ -241,7 +241,7 @@ hr {
 .travis {
   display: none;
   position: absolute;
-  background-image: url("./public/travis.png");
+  background-image: url("./images/travis.png");
   background-size: cover;
   width: 14vw;
   height: 14vw;
