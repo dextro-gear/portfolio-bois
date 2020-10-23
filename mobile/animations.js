@@ -1,4 +1,5 @@
-import anime from './node_modules/animejs/lib/anime.es.js';
+// import anime from './node_modules/animejs/lib/anime.es.js';
+import anime from "https://unpkg.com/animejs@3.2.1/lib/anime.es.js?module";
 
 var page = document.querySelector("html");
 
