@@ -163,7 +163,7 @@ hr {
   font-weight: 300;
   font-size: 4vw;
   width: 65vw;
-  margin: 2rem 0;
+  margin: 2vw 0;
   line-height: 1.1em;
   letter-spacing: -0.03em;
 }
@@ -172,7 +172,7 @@ hr {
   color: white;
   font-size: 1.2vw;
   font-weight: 300;
-  margin-top: 2rem;
+  margin-top: 2vw;
   letter-spacing: -0.03em;
   line-height: 1.7em;
   z-index: 10;
@@ -197,22 +197,22 @@ hr {
   font-weight: 300;
   font-size: 1.3vw;
   letter-spacing: -0.03em;
-  margin-left: 1rem;
+  margin-left: 1vw;
 }
 
 .line {
-  margin-left: 2rem;
+  margin-left: 2vw;
   flex: 1;
   overflow: hidden;
   border-top: white 1px solid;
 }
 
 .Hero1 {
-  margin-top: 2.8rem;
+  margin-top: 2.8vw;
   position: relative;
   display: block;
   height: 35vw;
-  margin-bottom: 8rem;
+  margin-bottom: 7vw;
 }
 
 .Hero1TextContainer {
@@ -261,6 +261,7 @@ hr {
   right: 0;
   margin-right: -6vw;
   margin-bottom: -6vw;
+  width: 12vw;
 }
 
 .Hero2,
@@ -284,7 +285,7 @@ hr {
   font-size: 4vw;
   display: block;
   letter-spacing: -0.03em;
-  margin: 1rem 0;
+  margin: 1vw 0;
 }
 
 .work-subtitle {
@@ -294,7 +295,7 @@ hr {
   letter-spacing: -0.03em;
   font-weight: 300;
   line-height: 1;
-  margin: 0.5rem 0;
+  margin: 0.5vw 0;
 }
 
 .work-sub-subtitle {
@@ -306,7 +307,7 @@ hr {
   opacity: 0.7;
   font-weight: 300;
   line-height: 1;
-  margin: 3rem 0;
+  margin: 3vw 0;
 }
 
 .work-description {
@@ -318,7 +319,7 @@ hr {
   letter-spacing: -0.03em;
   font-weight: 300;
   line-height: 1.5em;
-  margin-top: 5rem;
+  margin-top: 4vw;
 }
 
 .casestudy-link {
@@ -342,7 +343,7 @@ hr {
   display: flex;
   width: 100;
   position: relative;
-  margin: 0 3rem;
+  margin: 0 3vw;
   transition: 500ms ease;
 }
 
@@ -362,7 +363,7 @@ hr {
 }
 
 .arrow {
-  margin-left: 0.5rem;
+  margin-left: 0.5vw;
   margin-top: 16px;
 }
 
@@ -397,7 +398,7 @@ hr {
   color: white;
   font-size: 1.4vw;
   font-weight: 300;
-  margin-top: 3rem;
+  margin-top: 3vw;
 }
 
 .podcast-icon {
@@ -440,7 +441,7 @@ hr {
 }
 
 .hero4flex {
-  margin: 4rem 0;
+  margin: 4vw 0;
   display: flex;
   justify-content: space-between;
 }
@@ -453,7 +454,7 @@ hr {
 .bottomUL {
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 1rem;
+  padding-left: 1vw;
   width: 25%;
 }
 
@@ -466,7 +467,7 @@ hr {
 }
 
 .footer {
-  margin: 5rem auto;
+  margin: 5vw auto;
   width: 20%;
 }
 
@@ -492,7 +493,7 @@ hr {
   font-weight: 300;
   font-size: 2.6vw;
   width: 50vw;
-  margin: 3rem 0;
+  margin: 3vw 0;
   line-height: 1.1em;
   letter-spacing: -0.03em;
 }
@@ -502,7 +503,7 @@ hr {
 
 .about-description {
   color: white;
-  margin: 2rem 0;
+  margin: 2vw 0;
   font-family: Inter;
   font-weight: 300;
   font-size: 1.2vw;
@@ -546,18 +547,12 @@ hr {
 }
 
 .bottom-line {
-  margin-top: 7rem;
+  margin-top: 7vw;
 }
 
 /* responsiveness */
 
 @media screen and (width: 1536px) {
-  .srini-circle {
-    width: 13vw;
-    margin-right: -6.4vw;
-    margin-bottom: -6.4vw;
-  }
-
   .podcast-image {
     width: 22vw;
   }
@@ -581,7 +576,7 @@ hr {
   }
 
   .arrow {
-    margin-left: 0.5rem;
+    margin-left: 0.5vw;
   }
 
   .casestudy-link {

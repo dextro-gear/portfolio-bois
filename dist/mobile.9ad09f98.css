@@ -27,6 +27,7 @@ html {
   box-sizing: border-box;
   font-family: "NM";
   letter-spacing: -0.03em;
+  scroll-behavior: smooth;
 }
 
 body {
