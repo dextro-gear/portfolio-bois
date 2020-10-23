@@ -1,4 +1,4 @@
-import anime from "animejs";
+import anime from './node_modules/animejs/lib/anime.es.js';
 
 var page = document.querySelector("html");
 
