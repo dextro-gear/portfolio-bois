@@ -61,6 +61,7 @@ body {
   color: white;
   text-align: center;
   margin: 2vw 0;
+  line-height: 1.4em;
 }
 
 .margin {
@@ -106,7 +107,6 @@ a.button {
   margin-bottom: 0.5rem;
   -webkit-text-stroke: #1d1d1d;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: ;
 }
 
 .button-subtitle {
