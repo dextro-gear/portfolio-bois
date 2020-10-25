@@ -33,6 +33,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  min-height: 100%;
+  max-height: 100%;
 }
 
 body {
@@ -40,11 +42,13 @@ body {
 }
 
 .top-image {
+  width: 100%;
   max-width: 768px;
 }
 
 .top-srini-image {
   width: 100%;
+  max-width: 768px;
 }
 
 .title {
@@ -66,6 +70,7 @@ body {
 
 .margin {
   margin-bottom: 5vw;
+  line-height: 1.4em;
 }
 
 .text {
@@ -93,6 +98,7 @@ a.button {
   box-sizing: border-box;
   text-align: center;
   width: 80%;
+  max-width: 700px;
   text-decoration: none;
   background-color: white;
   margin: 1rem auto;
@@ -104,7 +110,7 @@ a.button {
   color: #1d1d1d;
   font-size: 1rem;
   margin: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   -webkit-text-stroke: #1d1d1d;
   -webkit-text-stroke-width: 1px;
 }
@@ -113,7 +119,7 @@ a.button {
   color: #757575;
   font-family: "Inter";
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   margin: 0;
 }
 
@@ -127,12 +133,40 @@ a.button {
   margin: 0;
 }
 
-.button-image {
+.bottom-image {
   width: 100%;
+  max-width: 768px;
   align-content: center;
 }
 
 .travis {
   display: block;
   width: 100%;
+}
+
+/* responsiveness */
+
+@media screen and (min-width: 768px) {
+  body {
+    align-content: center;
+    padding: 0 20vw;
+  }
+
+  .top-image,
+  .bottom-image {
+    margin: 0 auto;
+  }
+
+  .icon {
+    width: 5rem;
+    margin: 2vw;
+  }
+
+  .title {
+    font-size: 5vw;
+  }
+
+  .sub-title {
+    font-size: 2vw;
+  }
 }
