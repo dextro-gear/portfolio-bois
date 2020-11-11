@@ -345,6 +345,8 @@ hr {
   position: relative;
   margin: 0 3vw;
   transition: 500ms ease;
+  margin-top: 5vw;
+  margin-bottom: 10vw;
 }
 
 .work-image {
@@ -379,6 +381,7 @@ hr {
 .podcast-container {
   display: flex;
   justify-content: space-between;
+  height: auto;
 }
 
 .podcast-description {
@@ -585,6 +588,9 @@ hr {
   .casestudy-link .span,
   .casestudy-link .link {
     opacity: 0.75;
+  }
+  .center {
+    margin-top: -2vw;
   }
 }
 
