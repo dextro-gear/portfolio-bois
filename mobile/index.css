@@ -43,6 +43,7 @@ body {
   align-items: center;
   /* box-shadow: 0 0 7px 0px black; */
   position: fixed;
+  /* width: 100vw; */
   z-index: 50;
   top: 0;
   left: 0;
@@ -437,6 +438,87 @@ podcast-link {
   margin-top: 15vw;
 }
 /* ABOUT */
+
+/* SKILLSET SECTION */
+.experience-flex {
+  /* width: 100%; */
+  padding: 0 8vw;
+  margin-top: 10vw;
+}
+
+.sublead-width {
+  display: inline;
+  /* margin-bottom: 3vw; */
+}
+
+.sublead-title-container {
+  margin-bottom: 5vw;
+}
+
+.experience-icon {
+  /* background-image: url("http://placekitten.com/500/500"); */
+  width: 15vw;
+  height: 15vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  /* border-radius: 50%; */
+  margin-right: 4vw;
+}
+
+.experience-item {
+  display: flex;
+  margin: 6vw 0;
+  align-items: center;
+}
+
+.experience-title {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 3.8vw;
+  letter-spacing: -0.03em;
+  color: white;
+  margin: 0 0 1vw 0;
+}
+
+.experience-desc {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 3.3vw;
+  letter-spacing: -0.03em;
+  color: #999999;
+  margin: 0 0 0.5vw 0;
+}
+
+.softwares-flex {
+  padding: 0vw 8vw;
+  margin-top: 10vw;
+}
+
+.softwares-title {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 3.8vw;
+  letter-spacing: -0.03em;
+  color: white;
+  margin: 0 0 3vw 0;
+}
+
+.softwares-icon {
+  background-image: url("http://placekitten.com/550/550");
+  width: 15vw;
+  height: 15vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 3vw;
+}
+
+.softwares-item {
+  margin: 5vw 0;
+}
+/* SKILLSET SECTION */
+
 /* About page */
 
 /* NAV OVERLAY */

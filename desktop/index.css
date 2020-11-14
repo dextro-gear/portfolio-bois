@@ -518,6 +518,11 @@ hr {
   width: 46vw;
 }
 
+/* .highlighted-text {
+  background-color: #444444;
+  color: #999999;
+} */
+
 .clientele-container {
   display: flex;
   justify-content: flex-end;
@@ -552,6 +557,84 @@ hr {
 .bottom-line {
   margin-top: 7vw;
 }
+
+/* ABOUT PAGE SKILLSET */
+.skillset-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4vw;
+  margin-top: 6vw;
+}
+
+.experience-flex {
+  width: 100%;
+}
+
+.sublead-width {
+  display: inline;
+  /* margin-bottom: 3vw; */
+}
+
+.sublead-container {
+  margin-bottom: 2.8vw;
+}
+
+.experience-icon {
+  /* background-image: url("http://placekitten.com/500/500"); */
+  width: 4.5vw;
+  height: 4.5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  /* border-radius: 50%; */
+  margin-right: 1vw;
+}
+
+.experience-item {
+  display: flex;
+  margin: 2vw 0;
+  align-items: center;
+}
+
+.experience-title {
+  font-family: Inter;
+  font-size: 1.2vw;
+  letter-spacing: -0.03em;
+  color: white;
+  margin: 0 0 0.5vw 0;
+}
+
+.experience-desc {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 1vw;
+  letter-spacing: -0.03em;
+  color: #999999;
+  margin: 0 0 0.2vw 0;
+}
+
+.softwares-title {
+  font-family: Inter;
+  font-size: 1.2vw;
+  letter-spacing: -0.03em;
+  color: white;
+  margin: 0 0 1.5vw 0;
+}
+
+.softwares-icon {
+  background-image: url("http://placekitten.com/550/550");
+  width: 4.5vw;
+  height: 4.5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 1vw;
+}
+
+.softwares-item {
+  margin: 2vw 0;
+}
+/* ABOUT PAGE SKILLSET */
 
 /* responsiveness */
 
@@ -593,62 +676,3 @@ hr {
     margin-top: -2vw;
   }
 }
-
-/* LOCOMOTIVE SCROLL */
-html.has-scroll-smooth {
-  overflow: hidden;
-  /* original: hidden */
-}
-
-html.has-scroll-dragging {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.has-scroll-smooth body {
-  overflow: hidden;
-  /* hidden */
-}
-
-.has-scroll-smooth [data-scroll-container] {
-  min-height: 100%;
-}
-
-.c-scrollbar {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 11px;
-  height: 100%;
-  transform-origin: center right;
-  transition: transform 0.3s, opacity 0.3s;
-  opacity: 0;
-}
-.c-scrollbar:hover {
-  transform: scaleX(1.45);
-}
-.c-scrollbar:hover,
-.has-scroll-scrolling .c-scrollbar,
-.has-scroll-dragging .c-scrollbar {
-  opacity: 1;
-}
-
-.c-scrollbar_thumb {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: black;
-  opacity: 0.5;
-  width: 15px;
-  border-radius: 10px;
-  margin: 2px;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-.has-scroll-dragging .c-scrollbar_thumb {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-/* LOCOMOTIVE SCROLL */
