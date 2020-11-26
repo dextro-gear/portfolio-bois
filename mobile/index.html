@@ -27,7 +27,7 @@
               <path d="M 20,71 H 80" /> // bottom line
             …
         </svg> -->
-        <svg viewBox="0 0 100 80" width="20" height="20" class="hamburger">
+        <svg viewBox="0 0 100 80" width="7vw" height="7vw" class="hamburger">
             <rect width="90" height="10" id="path1"></rect>
             <rect y="30" width="90" height="10" id="path2"></rect>
             <rect y="60" width="90" height="10" id="path3"></rect>
@@ -230,6 +230,7 @@
         var circlyThingy = document.querySelector(".circle-thingy");
         var subLead = document.querySelector(".sublead-container");
         var stupidLine = document.querySelector(".hr-container");
+        var description = document.getElementsByClassName("description");
         
         var path1 = document.getElementById("path1");
         var path2 = document.getElementById("path2");
@@ -240,8 +241,8 @@
 
         // console.log(hamburger.children);
 
-        const elements = [ heroText, sriniImage, stupidLine, subLead]
-
+        const elements = [ heroText, sriniImage, stupidLine, subLead ].concat(description[0], description[1]);
+        console.log(elements);
         timeline.add({
                 targets: srinivasTeja,
                 opacity: [0, 1],
