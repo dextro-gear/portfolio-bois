@@ -15,7 +15,7 @@
         <p class="title">helu</p>
         <p class="title">i'm srini</p>
         <p class="sub-title">—</p>
-        <p class="sub-title margin">i'm a product designer<br/>digital artist & the host of<br/>talk design to me podcast</p>
+        <p class="sub-title margin">i'm a product designer,<br/>digital artist & the host of<br/>talk design to me podcast</p>
     </div>
     <div class="icons-container">
         <a target="_blank" href="https://medium.com/@srinivasteja.k">
@@ -56,5 +56,24 @@
     <div class="bottom-image">
         <img src="./images/travis.png" alt="travis" class="travis">
     </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="http://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
+    <script>
+        var srinivasTeja = document.querySelector(".top-srini-image");
+        var textElements = document.querySelector(".text").children;
+
+        var timeline = anime.timeline();
+
+        timeline.add({
+            targets: srinivasTeja,
+            opacity: [0,1],
+            translateY: ["-100%", "0%"],
+            duration: "1000ms",
+            autoplay: true,
+            loop: false,
+            easing: "easeInOutQuad",
+        })
+    </script>
 </body>
 </html>

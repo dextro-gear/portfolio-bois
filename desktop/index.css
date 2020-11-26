@@ -380,7 +380,7 @@ hr {
 
 .podcast-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: auto;
 }
 
@@ -394,14 +394,14 @@ hr {
   color: white;
   width: 42vw;
   padding-right: 6.5vw;
-  margin-top: 0.5vw;
+  margin-top: 0vw;
 }
 
 .podcast-platform-title {
   color: white;
   font-size: 1.4vw;
   font-weight: 300;
-  margin-top: 3vw;
+  margin-top: 1.9vw;
 }
 
 .podcast-icon {
@@ -411,7 +411,7 @@ hr {
 
 .podcast-link {
   display: inline-block;
-  height: 4vw;
+  height: 2.3vw;
   margin-right: 1vw;
 }
 
@@ -674,5 +674,16 @@ hr {
   }
   .center {
     margin-top: -2vw;
+  }
+
+  .podcast-platform-title {
+    color: white;
+    font-size: 1.4vw;
+    font-weight: 300;
+    margin-top: 2vw;
+  }
+
+  .podcast-content {
+    margin-left: 2.5vw;
   }
 }

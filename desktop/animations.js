@@ -1,5 +1,3 @@
-// import LocomotiveScroll from "locomotive-scroll";
-// import $ from "jquery";
 
 /* CIRCLE THINGY SCROLL ROTATE ANIMATION */
 window.addEventListener("scroll", ()=>{
@@ -32,8 +30,7 @@ textLayout.forEach((container)=> {
 
 
 /* TRAVIS HOVER ANIMATION */
-var travisLink = document.querySelector(".travis-link");
-var body = document.querySelector("body");
+const travisLink = document.querySelector(".travis-link");
 
 travisLink.addEventListener("mouseover", e=>{
     var travisImage = document.querySelector(".travis");
@@ -77,10 +74,3 @@ travisLink.addEventListener("mouseleave", e=>{
 //     viewCursor.css("transform", "scale(0)");
 // });
 /* VIEW CURSOR */
-
-
-// Locomotive scroll
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector("[data-scroll-container]"),
-//     smooth: true
-// });

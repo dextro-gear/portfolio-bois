@@ -19,7 +19,19 @@
                 Product designer — BLR, IN.
             </p>
         </div>
-        <span class="hamburger">&#9776;</span>
+        <!-- <span class="hamburger">&#9776;</span> -->
+        <!-- <svg class="hamburger" width="20px" height="20px" viewBox= "0 0 100 100" >
+            …
+              <path d="M 20,29 H 80" /> // top line
+              <path d="M 20,50 H 80" /> // middle line
+              <path d="M 20,71 H 80" /> // bottom line
+            …
+        </svg> -->
+        <svg viewBox="0 0 100 80" width="20" height="20" class="hamburger">
+            <rect width="90" height="10" id="path1"></rect>
+            <rect y="30" width="90" height="10" id="path2"></rect>
+            <rect y="60" width="90" height="10" id="path3"></rect>
+          </svg>
     </div>
     <!-- sticky nav -->
 
@@ -149,7 +161,7 @@
         <div class="embed-container">
             <p class="embed-title">LISTEN TO THE LATEST EPISODE HERE</p>
             <div class="embed">
-            <iframe width="100%" height="100%" src="https://open.spotify.com/embed-podcast/episode/3wHvp9PnIPmG6MCtV2ESTY" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe width="100%" height="100%" src="https://open.spotify.com/embed-podcast/show/1y1jh73dtEwCgxcC1fhPeY" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
     </section>
@@ -209,7 +221,79 @@
     <!-- NAV OVERLAY -->
 
     <!-- JAVASCRIPTS -->
+    <script src="http://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
     <script src="./animations.js" type="module"></script>
+    <script>
+        var srinivasTeja = document.querySelector(".srinivas-teja");
+        var heroText = document.querySelector(".lead-container");
+        var sriniImage = document.querySelector(".hero1-srini");
+        var circlyThingy = document.querySelector(".circle-thingy");
+        var subLead = document.querySelector(".sublead-container");
+        var stupidLine = document.querySelector(".hr-container");
+        
+        var path1 = document.getElementById("path1");
+        var path2 = document.getElementById("path2");
+        var path3 = document.getElementById("path3");
+        var hamburger = [path1, path2, path3];
+
+        var timeline = anime.timeline();
+
+        // console.log(hamburger.children);
+
+        const elements = [ heroText, sriniImage, stupidLine, subLead]
+
+        timeline.add({
+                targets: srinivasTeja,
+                opacity: [0, 1],
+                translateX: {
+                        duration: "1000ms",
+                        value: ["-5%", "0%"],
+                        easing: "easeInOutQuad",
+                    },
+                duration: "1000ms",
+                easing: "easeInOutQuad",
+                autoplay: true,
+                loop: false,
+            },);
+
+        elements.forEach(function (node){
+            timeline.add({
+                targets: node,
+                opacity: [0, 1],
+                translateX: {
+                        duration: "1000ms",
+                        value: ["-5%", "0%"],
+                        easing: "easeInOutQuad",
+                    },
+                duration: "1000ms",
+                easing: "easeInOutQuad",
+                autoplay: true,
+                loop: false,
+            }, "-=600ms");
+        });
+
+      timeline.add({
+            targets: circlyThingy,
+            opacity: [0, 1],
+            rotate: [315, 360],
+            duration: "1000ms",
+            easing: "easeInOutQuad",
+            autoplay: true,
+            loop: false,
+      })
+
+      timeline.add({
+            targets: hamburger,
+            opacity: [0, 1],
+            delay: function (el, i) {return i*200},
+            translateX: ["100%", "0%"],
+            duration: "500ms",
+            easing: "easeInOutQuad",
+            autoplay: true,
+            loop: false,
+      }, "-=1000");
+      
+    </script>
     <!-- <script type="module" src="./index.js"></script> -->
 </body>
 </html>
