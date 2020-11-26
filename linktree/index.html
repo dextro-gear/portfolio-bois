@@ -8,6 +8,22 @@
     <title>Linkup</title>
 </head>
 <body>
+    <div class="BLACKED"></div>
+    <div class="animation-div">
+        <div class="srini-image">
+            <div class="waving-hand"><img src="./images/waving_hand.png" width="100%" height="100%" alt="waving-hand"></div>
+            <div class="bottom-gradient-circle">
+                <span class="heluu">
+                    <span>h</span>
+                    <span>e</span>
+                    <span>l</span>
+                    <span>u</span>
+                    <span>u</span>
+                    <span>!</span>
+                </span>
+            </div>
+        </div>
+    </div>
     <div class="top-image">
         <img src="./images/top_srini.png" alt="srini" class="top-srini-image">
     </div>
@@ -60,20 +76,80 @@
     <!-- JAVASCRIPTS -->
     <script src="http://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
     <script>
-        var srinivasTeja = document.querySelector(".top-srini-image");
-        var textElements = document.querySelector(".text").children;
+        var wavingHand = document.querySelector(".waving-hand");
+        var heluuText = document.querySelector(".heluu").children;
+        var animationDiv = document.querySelector(".animation-div");
+        var blackDiv = document.querySelector(".BLACKED");
 
         var timeline = anime.timeline();
 
+        var scrolling = false;
+
+        window.addEventListener("touchmove", function(event){
+            if(!scrolling){
+                event.preventDefault();
+            }
+        });
+
+        setTimeout(function() {
+            scrolling = true;
+        },3500);
+
         timeline.add({
-            targets: srinivasTeja,
-            opacity: [0,1],
-            translateY: ["-100%", "0%"],
-            duration: "1000ms",
+            targets: blackDiv,
+            opacity: {
+                value: [1, 0],
+                duration: "1000ms",
+                easing: "linear",
+            },
             autoplay: true,
             loop: false,
-            easing: "easeInOutQuad",
         })
+        .add({
+            targets: heluuText,
+            opacity: [0, 1],
+            translateY: ["10%", "0%"],
+            delay: function(el, i) {return i*100},
+            duration: "1000ms",
+            easing: "easeInOutQuad",
+            autoplay: true,
+            loop: false
+        })
+        .add({
+            targets: wavingHand,
+            opacity: {
+                value: [0, 1],
+                duration: "200ms",
+                delay: 0,
+            },
+            translateX: {
+                value: "-70%",
+                duration: 1,
+                delay: 0,
+            },
+            rotate: [
+                { value: [0, 45], duration: "200ms" },
+                { value: [45, 0], duration: "200ms" },
+                { value: [0, 45], duration: "200ms" },
+                { value: [45, 0], duration: "200ms" },
+                { value: [0, 45], duration: "200ms" },
+                { value: [45, 0], duration: "200ms" }
+            ],
+            easing: "easeInOutQuad",
+            autoplay: true,
+            loop: false,
+            delay: "500ms",
+        })
+        .add({
+            targets: animationDiv,
+            translateY: ["0%", "-100%"],
+            duration: "1000ms",
+            easing: "easeInOutQuad",
+            autoplay: true,
+            loop: false,
+            delay: "1000ms",
+        });
+        
     </script>
 </body>
 </html>
