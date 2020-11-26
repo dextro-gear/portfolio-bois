@@ -75,25 +75,29 @@
 
     <!-- JAVASCRIPTS -->
     <script src="http://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="http://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
-        var wavingHand = document.querySelector(".waving-hand");
+        $(document).ready(function(){
+            var wavingHand = document.querySelector(".waving-hand");
         var heluuText = document.querySelector(".heluu").children;
         var animationDiv = document.querySelector(".animation-div");
         var blackDiv = document.querySelector(".BLACKED");
 
+        const body = document.getElementsByTagName("body");
         var timeline = anime.timeline();
 
-        var scrolling = false;
+        // var scrolling = false;
 
-        window.addEventListener("touchmove", function(event){
-            if(!scrolling){
-                event.preventDefault();
-            }
-        });
+        // window.addEventListener("touchmove", function(event){
+        //     if(!scrolling){
+        //         event.preventDefault();
+        //         event.stopPropagation();
+        //     }
+        // });
 
-        setTimeout(function() {
-            scrolling = true;
-        },3500);
+        // setTimeout(function() {
+        //     scrolling = true;
+        // },3500);
 
         timeline.add({
             targets: blackDiv,
@@ -142,12 +146,13 @@
         })
         .add({
             targets: animationDiv,
-            translateY: ["0%", "-100%"],
+            translateY: ["0%", "-200%"],
             duration: "1000ms",
             easing: "easeInOutQuad",
             autoplay: true,
             loop: false,
             delay: "1000ms",
+        });
         });
         
     </script>
