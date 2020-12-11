@@ -20,6 +20,10 @@
   font-weight: 700;
 }
 
+p {
+  margin: 0;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -386,7 +390,8 @@ podcast-link {
 }
 
 .copyrights {
-  margin-bottom: 10vw;
+  display: block;
+  padding-bottom: 10vw;
 }
 
 .copyrights > p {
