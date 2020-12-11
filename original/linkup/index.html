@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>Linkup</title>
+  </head>
+  <body>
+    <!-- <div class="BLACKED"></div>
+    <div class="animation-div">
+      <div class="srini-image">
+        <div class="waving-hand">
+          <img
+            src="./images/waving_hand.png"
+            width="100%"
+            height="100%"
+            alt="waving-hand"
+          />
+        </div>
+        <div class="bottom-gradient-circle">
+          <span class="heluu">
+            <span>h</span>
+            <span>e</span>
+            <span>l</span>
+            <span>u</span>
+            <span>u</span>
+            <span>!</span>
+          </span>
+        </div>
+      </div>
+    </div> -->
+    <div class="top-image">
+      <img src="./images/top_srini.png" alt="srini" class="top-srini-image" />
+    </div>
+    <div class="text">
+      <p class="title">helu</p>
+      <p class="title">i'm srini</p>
+      <p class="sub-title">—</p>
+      <p class="sub-title margin">
+        i'm a product designer,<br />digital artist & the host of<br />talk
+        design to me podcast
+      </p>
+    </div>
+    <div class="icons-container">
+      <a target="_blank" href="https://medium.com/@srinivasteja.k">
+        <img src="./images/icons/medium.svg" alt="medium" class="icon" />
+      </a>
+      <a target="_blank" href="https://open.spotify.com/user/srinivas.teja">
+        <img src="./images/icons/spotify.svg" alt="spotify" class="icon" />
+      </a>
+      <a target="_blank" href="https://twitter.com/srinivaskteja">
+        <img src="./images/icons/twitter.svg" alt="twitter" class="icon" />
+      </a>
+    </div>
+    <div class="icons-container">
+      <a target="_blank" href="https://www.behance.net/srinivasteja">
+        <img src="./images/icons/behance.svg" alt="behance" class="icon" />
+      </a>
+      <a target="_blank" href="https://dribbble.com/srinivasteja">
+        <img src="./images/icons/dribbble.svg" alt="dribbble" class="icon" />
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/srinivastejak/">
+        <img src="./images/icons/linkedin.svg" alt="linkedin" class="icon" />
+      </a>
+    </div>
+    <div class="buttons" id="buttonsss">
+      <a
+        target="_blank"
+        href="https://open.spotify.com/show/1y1jh73dtEwCgxcC1fhPeY"
+        class="button"
+      >
+        <p class="button-title">talk design to me podcast</p>
+        <p class="button-subtitle">listen to the latest episode</p>
+      </a>
+      <a target="_blank" href="https://www.srinivasteja.com" class="button">
+        <p class="button-title">visit my website</p>
+        <p class="button-subtitle">check out my work/ hit me up for a collab</p>
+      </a>
+    </div>
+    <div class="bottom-text">
+      <p class="sub-title">have a nice day :')</p>
+      <p class="copyrights">© Srinivas Teja K 2020</p>
+    </div>
+    <div class="bottom-image">
+      <img src="./images/travis.png" alt="travis" class="travis" />
+    </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="http://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="http://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const body = document.querySelector("body");
+
+        anime({
+          targets: body,
+          opacity: [0, 1],
+          duration: "1000ms",
+          scale: ["0.9", "1"],
+          autoplay: true,
+          loop: false,
+        });
+
+        anime.play();
+      });
+
+      // $(document).ready(function(){
+      //     var wavingHand = document.querySelector(".waving-hand");
+      // var heluuText = document.querySelector(".heluu").children;
+      // var animationDiv = document.querySelector(".animation-div");
+      // var blackDiv = document.querySelector(".BLACKED");
+
+      // const body = document.getElementsByTagName("body");
+      // var timeline = anime.timeline();
+
+      // var scrolling = false;
+
+      // window.addEventListener("touchmove", function(event){
+      //     if(!scrolling){
+      //         event.preventDefault();
+      //         event.stopPropagation();
+      //     }
+      // });
+
+      // setTimeout(function() {
+      //     scrolling = true;
+      // },3500);
+
+      // timeline.add({
+      //     targets: blackDiv,
+      //     opacity: {
+      //         value: [1, 0],
+      //         duration: "1000ms",
+      //         easing: "linear",
+      //     },
+      //     autoplay: true,
+      //     loop: false,
+      // })
+      // .add({
+      //     targets: heluuText,
+      //     opacity: [0, 1],
+      //     translateY: ["10%", "0%"],
+      //     delay: function(el, i) {return i*100},
+      //     duration: "1000ms",
+      //     easing: "easeInOutQuad",
+      //     autoplay: true,
+      //     loop: false
+      // })
+      // .add({
+      //     targets: wavingHand,
+      //     opacity: {
+      //         value: [0, 1],
+      //         duration: "200ms",
+      //         delay: 0,
+      //     },
+      //     translateX: {
+      //         value: "-70%",
+      //         duration: 1,
+      //         delay: 0,
+      //     },
+      //     rotate: [
+      //         { value: [0, 45], duration: "200ms" },
+      //         { value: [45, 0], duration: "200ms" },
+      //         { value: [0, 45], duration: "200ms" },
+      //         { value: [45, 0], duration: "200ms" },
+      //         { value: [0, 45], duration: "200ms" },
+      //         { value: [45, 0], duration: "200ms" }
+      //     ],
+      //     easing: "easeInOutQuad",
+      //     autoplay: true,
+      //     loop: false,
+      //     delay: "500ms",
+      // })
+      // .add({
+      //     targets: animationDiv,
+      //     translateY: ["0%", "-200%"],
+      //     duration: "1000ms",
+      //     easing: "easeInOutQuad",
+      //     autoplay: true,
+      //     loop: false,
+      //     delay: "1000ms",
+      // });
+      // });
+    </script>
+  </body>
+</html>

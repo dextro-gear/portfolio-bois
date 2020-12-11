@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel index.html",
+    "prod": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dextro-gear/srinis-portfolio.git"
+  },
+  "author": "Abhishek Rajasundaram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dextro-gear/srinis-portfolio.git"
+  },
+  "homepage": "https://github.com/dextro-gear/srinis-portfolio.git",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "jquery": "^3.5.1",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
