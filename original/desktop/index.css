@@ -25,6 +25,8 @@ html {
   box-sizing: border-box;
   font-family: "NM", serif;
   overflow-x: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
   /* cursor: none; */
 }
 
@@ -417,35 +419,66 @@ hr {
   margin: 0 -5vw 0vw -5vw;
 }
 
-.snippets-image-container {
-  /* background-image: url("http://placekitten.com/800"); */
-  background-size: cover;
+.snippets-grid > a {
+  display: block;
   width: 27vw;
   height: 27vw;
+  overflow: hidden;
+}
+
+.snippets-image-container {
+  /* background-image: url("http://placekitten.com/800"); */
+  width: 100%;
+  height: 100%;
+  transition: transform 2s ease-in-out;
+  transform-origin: center;
+}
+
+.snippets-grid > a:hover .snippets-image-container {
+  transform: scale(1.05, 1.05);
+  transform-origin: center;
 }
 
 div[id="1"] {
   background-image: url("./images/snippets/1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 div[id="2"] {
   background-image: url("./images/snippets/2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 div[id="3"] {
   background-image: url("./images/snippets/3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 div[id="4"] {
   background-image: url("./images/snippets/4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 div[id="5"] {
   background-image: url("./images/snippets/5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 div[id="6"] {
   background-image: url("./images/snippets/6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* snippets */
 
