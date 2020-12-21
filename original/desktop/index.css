@@ -25,8 +25,9 @@ html {
   box-sizing: border-box;
   font-family: "NM", serif;
   overflow-x: hidden;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
+  -webkit-transform: translate3d(0);
+  -webkit-backface-visibility: hidden;
+  -moz-transform: translate3d(0);
   /* cursor: none; */
 }
 
@@ -435,49 +436,51 @@ hr {
 }
 
 .snippets-grid > a:hover .snippets-image-container {
+  width: 100%;
+  height: 100%;
   transform: scale(1.05, 1.05);
   transform-origin: center;
 }
 
 div[id="1"] {
   background-image: url("./images/snippets/1.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
 div[id="2"] {
   background-image: url("./images/snippets/2.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
 div[id="3"] {
   background-image: url("./images/snippets/3.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
 div[id="4"] {
   background-image: url("./images/snippets/4.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
 div[id="5"] {
   background-image: url("./images/snippets/5.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
 div[id="6"] {
   background-image: url("./images/snippets/6.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 /* snippets */
