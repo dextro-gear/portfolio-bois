@@ -238,7 +238,7 @@ a {
 }
 
 .case-study {
-  color: #bdbdbd;
+  color: white;
   display: inline;
   /* padding: 0 0 0 8vw; */
   font-size: 3.5vw;
@@ -371,8 +371,8 @@ podcast-link {
 
 /* Playground */
 .playground-section {
-  /* margin-top: 5vw; */
-  margin-bottom: 20vw;
+  margin-top: 5vw;
+  margin-bottom: 14vw;
 }
 
 .playground-grid {
