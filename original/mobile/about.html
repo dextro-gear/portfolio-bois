@@ -290,6 +290,19 @@
     <!-- NAV OVERLAY -->
 
     <!-- FOOOOOOOOTER -->
+    <script src="http://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
     <script src="./animations.js" type="module"></script>
+    <script>
+      var overlay = document.querySelector(".overlay-body");
+      var timeline = anime.timeline();
+
+      timeline.add({
+        targets: overlay,
+        opacity: [0, 1],
+        duration: "1ms",
+        autoplay: true,
+        loop: false,
+      });
+    </script>
   </body>
 </html>

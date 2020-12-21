@@ -431,6 +431,7 @@
       var stupidLine = document.querySelector(".hr-container");
       var description = document.getElementsByClassName("description");
       var playground = document.querySelector(".playground-section");
+      var overlay = document.querySelector(".overlay-body");
 
       var path1 = document.getElementById("path1");
       var path2 = document.getElementById("path2");
@@ -452,11 +453,11 @@
         targets: srinivasTeja,
         opacity: [0, 1],
         translateX: {
-          duration: "1000ms",
+          duration: "500ms",
           value: ["-5%", "0%"],
           easing: "easeInOutQuad",
         },
-        duration: "1000ms",
+        duration: "500ms",
         easing: "easeInOutQuad",
         autoplay: true,
         loop: false,
@@ -468,16 +469,16 @@
             targets: node,
             opacity: [0, 1],
             translateX: {
-              duration: "1000ms",
+              duration: "500ms",
               value: ["-5%", "0%"],
               easing: "easeInOutQuad",
             },
-            duration: "1000ms",
+            duration: "500ms",
             easing: "easeInOutQuad",
             autoplay: true,
             loop: false,
           },
-          "-=600ms"
+          "-=400ms"
         );
       });
 
@@ -485,27 +486,35 @@
         targets: circlyThingy,
         opacity: [0, 1],
         rotate: [315, 360],
-        duration: "1000ms",
+        duration: "500ms",
         easing: "easeInOutQuad",
         autoplay: true,
         loop: false,
       });
 
-      timeline.add(
-        {
-          targets: hamburger,
-          opacity: [0, 1],
-          delay: function (el, i) {
-            return i * 200;
+      timeline
+        .add(
+          {
+            targets: hamburger,
+            opacity: [0, 1],
+            delay: function (el, i) {
+              return i * 200;
+            },
+            translateX: ["100%", "0%"],
+            duration: "500ms",
+            easing: "easeInOutQuad",
+            autoplay: true,
+            loop: false,
           },
-          translateX: ["100%", "0%"],
-          duration: "500ms",
-          easing: "easeInOutQuad",
+          "-=1000"
+        )
+        .add({
+          targets: overlay,
+          opacity: [0, 1],
+          duration: "1ms",
           autoplay: true,
           loop: false,
-        },
-        "-=1000"
-      );
+        });
     </script>
     <!-- <script type="module" src="./index.js"></script> -->
   </body>
