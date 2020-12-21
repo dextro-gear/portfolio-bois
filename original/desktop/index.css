@@ -311,8 +311,8 @@ hr {
   position: relative;
   margin: 0 3vw;
   transition: 500ms ease;
-  margin-top: 5vw;
-  margin-bottom: 10vw;
+  margin-top: 3vw;
+  margin-bottom: 8vw;
 }
 
 .work-image {
@@ -410,6 +410,11 @@ hr {
 }
 
 /* snippets */
+.snippets {
+  margin-top: -3vw;
+  margin-bottom: 5vw;
+}
+
 .snippets-grid {
   display: grid;
   grid-template-columns: max-content max-content max-content;
@@ -486,7 +491,7 @@ div[id="6"] {
 /* snippets */
 
 .hero4flex {
-  margin: 4vw 0;
+  margin: 1vw 0 4vw 0;
   display: flex;
   justify-content: space-between;
 }
@@ -722,5 +727,10 @@ div[id="6"] {
 
   .podcast-content {
     margin-left: 2.5vw;
+  }
+
+  .snippets {
+    margin-top: -1vw;
+    margin-bottom: 5vw;
   }
 }
